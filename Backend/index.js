@@ -1,6 +1,15 @@
 import express from "express"
 import cors from 'cors'
 import pruebaRouter from "./src/routes/prueba.router.js";
+import db from "./src/config/db.js";
+
+// Conexión a DB
+try {
+  await db.authenticate();
+  console.log('Conexión correcta a la base de datos')
+} catch (error) {
+  
+}
 
 const app = express()
 app.use(cors())
