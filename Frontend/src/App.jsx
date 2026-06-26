@@ -1,16 +1,9 @@
-import {
-BrowserRouter,
-Routes,
-Route
-}
+import { BrowserRouter } from "react-router-dom";
 
-from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Destinations from "./pages/Destinations";
-import Packages from "./pages/Packages";
-import Contact from "./pages/Contact";
+import AppRoutes from "./routes/AppRoutes";
 
 function App(){
 
@@ -18,34 +11,11 @@ return(
 
 <BrowserRouter>
 
-<Routes>
+<Navbar/>
 
-<Route
-path="/"
-element={<Home/>}
-/>
+<AppRoutes/>
 
-<Route
-path="/services"
-element={<Services/>}
-/>
-
-<Route
-path="/destinations"
-element={<Destinations/>}
-/>
-
-<Route
-path="/packages"
-element={<Packages/>}
-/>
-
-<Route
-path="/contact"
-element={<Contact/>}
-/>
-
-</Routes>
+<Footer/>
 
 </BrowserRouter>
 
