@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import inicioRouter from "./src/routes/inicio.router.js";
+import usuarioRouter from "./src/routes/usuario.router.js";
+import destinoRouter from "./src/routes/destinos.router.js";
 import db from "./src/config/db.js";
 import "./src/models/Usuario.js";
 import cargarDatos from "./src/seeders/index.js";
@@ -11,6 +13,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/", inicioRouter);
+app.use("/usuarios", usuarioRouter);
+app.use("/destinos", destinoRouter);
 
 try {
   await db.authenticate();
