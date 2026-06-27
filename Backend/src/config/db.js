@@ -8,6 +8,7 @@ const db = new Sequelize(DB_NOMBRE, DB_USER, DB_PASSWORD, {
   host: "localhost",
   port: 3306,
   dialect: "mysql",
+  logging: "false",
   define: {
     timestamps: true,
   },
