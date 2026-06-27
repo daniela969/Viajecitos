@@ -1,24 +1,24 @@
 import { DataTypes } from "sequelize";
 import db from "../config/db.js";
 
-const Usuario = db.define("usuarios", {
+const Reserva = db.define("reservas", {
   id: {
     type: DataTypes.UUID,
     defaultValue: DataTypes.UUIDV4,
     primaryKey: true,
   },
-  nombre: {
-    type: DataTypes.STRING,
+  fechaInicio: {
+    type: DataTypes.DATEONLY,
     allowNull: false,
   },
-  contrasena: {
-    type: DataTypes.STRING,
+  fechaFin: {
+    type: DataTypes.DATEONLY,
     allowNull: false,
   },
-  email: {
-    type: DataTypes.STRING,
+  personas: {
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
 });
 
-export default Usuario;
+export default Reserva;

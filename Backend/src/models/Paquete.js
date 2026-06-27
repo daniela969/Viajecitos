@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 import db from "../config/db.js";
 
-const Usuario = db.define("usuarios", {
+const Paquete = db.define("paquetes", {
   id: {
     type: DataTypes.UUID,
     defaultValue: DataTypes.UUIDV4,
@@ -11,14 +11,14 @@ const Usuario = db.define("usuarios", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  contrasena: {
-    type: DataTypes.STRING,
+  descripcion: {
+    type: DataTypes.TEXT,
     allowNull: false,
   },
-  email: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
+  precio: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  }
 });
 
-export default Usuario;
+export default Paquete;
