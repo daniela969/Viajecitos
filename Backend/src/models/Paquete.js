@@ -15,10 +15,18 @@ const Paquete = db.define("paquetes", {
     type: DataTypes.TEXT,
     allowNull: false,
   },
+  duracion: {
+    type: DataTypes.TEXT,
+    allowNull: false,
+  },
   precio: {
     type: DataTypes.INTEGER,
-    allowNull: false
-  }
+    allowNull: false,
+  },
+  imagen: {
+    type: DataTypes.TEXT,
+    allowNull: false,
+  },
 });
 
 export default Paquete;

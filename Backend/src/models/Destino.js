@@ -15,6 +15,10 @@ const Destino = db.define("destinos", {
     type: DataTypes.TEXT,
     allowNull: false,
   },
+  imagen: {
+    type: DataTypes.TEXT,
+    allowNull: false,
+  },
 });
 
 export default Destino;
