@@ -1,20 +1,168 @@
-.Navbar{
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:20px;
-
+body {
+  margin: 0;
+  background: #e5e5e5;
 }
 
-.Navbar ul{
+.hero {
+  height: calc(100vh - 90px);
 
-display:flex;
+  background: #14213d;
 
-gap:20px;
+  display: flex;
 
-list-style:none;
+  align-items: center;
 
+  justify-content: space-between;
+
+  padding: 0 8%;
+
+  gap: 80px;
+}
+
+.hero-text {
+  max-width: 600px;
+
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 72px;
+
+  margin-bottom: 20px;
+
+  line-height: 1.1;
+}
+
+.hero-text p {
+  font-size: 22px;
+
+  color: #d9d9d9;
+
+  margin-bottom: 40px;
+
+  line-height: 1.8;
+}
+
+.hero-text button {
+  background: #e9c46a;
+
+  color: #14213d;
+
+  border: none;
+
+  padding: 16px 32px;
+
+  border-radius: 14px;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 550px;
+
+  height: 380px;
+
+  object-fit: cover;
+
+  border-radius: 28px;
+
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+nav {
+  border-bottom: 2px solid rgba(233, 196, 106, 0.35);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6%;
+  height: 90px;
+  background: linear-gradient(90deg, #14213d 0%, #22375b 75%, #e9c46a 100%);
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+
+  display: flex;
+
+  gap: 40px;
+
+  margin: 0;
+
+  padding: 0;
+}
+nav a {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #e9c46a;
+}
+
+.card {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  width: 250px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.icon {
+  font-size: 50px;
+
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: gray;
+}
+.servicios {
+  padding: 100px 150px;
+
+  background: #f8f8f8;
+}
+
+.servicios h1 {
+  text-align: center;
+
+  font-size: 50px;
+
+  margin-bottom: 60px;
+}
+
+.servicios-container {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
 }

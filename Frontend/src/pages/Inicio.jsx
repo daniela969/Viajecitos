@@ -1,23 +1,13 @@
 import Button from "../components/Button";
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
 
-function Inicio(){
-
-return(
-
-<div>
-
-<h1>
-Los mejores viajes
-</h1>
-
-<Button
-texto="Reservar"
-/>
-
-</div>
-
-)
-
+function Inicio() {
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }
 
 export default Inicio;
