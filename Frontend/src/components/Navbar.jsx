@@ -1,32 +1,52 @@
 import { Link } from "react-router-dom";
-import "../App.css";
+import { useEffect, useState } from "react";
 
-function Navbar(){
+function Navbar() {
+  const [scroll, setScroll] = useState(false);
 
-return(
+  useEffect(() => {
+    function cambiarColor() {
+      if (window.scrollY > 80) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    }
 
-<nav className="Navbar">
+    window.addEventListener("scroll", cambiarColor);
 
-<h2>Viajecitos</h2>
+    return () => {
+      window.removeEventListener("scroll", cambiarColor);
+    };
+  }, []);
 
-<ul>
+  return (
+    <nav className={scroll ? "nav-scroll" : "nav"}>
+      <h2>Viajecitos</h2>
 
-<li><Link to="/">Inicio</Link></li>
+      <ul>
+        <li>
+          <Link to="/">Inicio</Link>
+        </li>
 
-<li><Link to="/servicios">Servicios</Link></li>
+        <li>
+          <Link to="/servicios">Servicios</Link>
+        </li>
 
-<li><Link to="/destinos">Destinos</Link></li>
+        <li>
+          <Link to="/destinos">Destinos</Link>
+        </li>
 
-<li><Link to="/paquetes">Paquetes</Link></li>
+        <li>
+          <Link to="/paquetes">Paquetes</Link>
+        </li>
 
-<li><Link to="/contacto">Contacto</Link></li>
-
-</ul>
-
-</nav>
-
-)
-
+        <li>
+          <Link to="/contactos">Contacto</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
