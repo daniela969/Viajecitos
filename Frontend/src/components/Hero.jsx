@@ -1,5 +1,6 @@
 import Button from "./Button";
 import HeroImage from "../assets/hero.jpg";
+import Destinoscarrusel from "./Destinoscarrusel";
 
 function Hero() {
 
@@ -38,31 +39,9 @@ alt="Viaje"
 
 <section className="destinos">
 
-<h2>
-Destinos Destacados
-</h2>
-
-<div className="destinos-container">
-
-<div className="destino">
-<img src={HeroImage}/>
-<p>Cartagena</p>
-</div>
-
-<div className="destino">
-<img src={HeroImage}/>
-<p>París</p>
-</div>
-
-<div className="destino">
-<img src={HeroImage}/>
-<p>Bali</p>
-</div>
-
-</div>
+<Destinoscarrusel/>
 
 </section>
-
 
 <section className="testimonios">
 
