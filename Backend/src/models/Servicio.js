@@ -10,7 +10,7 @@ const Servicio = db.define("servicios", {
   nombre: {
     type: DataTypes.STRING,
   },
-  id: {
+  descripcion: {
     type: DataTypes.STRING,
   },
 });

@@ -3,8 +3,8 @@ import cors from "cors";
 import inicioRouter from "./src/routes/inicio.router.js";
 import usuarioRouter from "./src/routes/usuario.router.js";
 import destinoRouter from "./src/routes/destinos.router.js";
+import servicioRouter from "./src/routes/servicios.router.js";
 import db from "./src/config/db.js";
-import "./src/models/Usuario.js";
 import cargarDatos from "./src/seeders/index.js";
 
 const app = express();
@@ -15,6 +15,7 @@ app.use(express.json());
 app.use("/", inicioRouter);
 app.use("/usuarios", usuarioRouter);
 app.use("/destinos", destinoRouter);
+app.use("/servicios", servicioRouter);
 
 try {
   await db.authenticate();
