@@ -27,21 +27,13 @@ y reserva fácilmente.
 </div>
 
 <div className="hero-image">
-
-<img
-src={HeroImage}
-alt="Viaje"
+<img src={HeroImage} alt="Viaje"
 />
-
 </div>
 
 </section>
 
-<section className="destinos">
-
 <Destinoscarrusel/>
-
-</section>
 
 <section className="testimonios">
 

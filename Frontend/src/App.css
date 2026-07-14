@@ -10,17 +10,15 @@ body {
   margin: 0;
   background: var(--color-fondo);
 }
-
-.hero {
-  height: calc(100vh - 90px);
-  background: var(--color-primario);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 8%;
-  gap: 80px;
+.hero{
+    min-height:100vh;
+    background:var(--color-primario);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:90px 8% 60px;
+    box-sizing:border-box;
 }
-
 .hero-text {
   max-width: 600px;
   color: var(--blanco);
@@ -43,11 +41,12 @@ body {
   background: var(--color-secundario);
   color: var(--color-primario);
   border: none;
-  padding: 16px 32px;
-  border-radius: 14px;
+  padding: 18px 38px;
+  border-radius: 50px;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
+   transition:.35s;
 }
 
 .hero-image img {
@@ -58,22 +57,32 @@ body {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
 }
 
-.hero {
-  height: calc(100vh - 90px);
-  background: var(--color-primario);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 8%;
+
+.hero-text button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
+
 /* Destinos */
 /*==========================
         DESTINOS
 ==========================*/
+.destinos-container{
 
+max-width:1400px;
+
+margin:auto;
+
+padding:0 8%;
+
+}
 .destinos{
 
 padding:30px 8%;
+
+max-width:1400px;
+
+margin:auto;
 
 background:var(--color-fondo);
 
@@ -83,11 +92,10 @@ text-align:center;
 
 .destinos h2{
 
-font-size:42px;
-
+font-size:58px;
+font-weight:800;
+margin-bottom:55px;
 color:var(--color-primario);
-
-margin-bottom:15px;
 
 }
 
@@ -105,11 +113,9 @@ margin-bottom:50px;
 
 .destinos .swiper{
 
-width:85%;
-
+width:100%;
 margin:auto;
-
-padding-bottom:60px;
+padding-bottom:70px;
 
 }
 
@@ -142,9 +148,9 @@ background:var(--color-secundario);
 
 position:relative;
 
-height:430px;
+height:500px;
 
-border-radius:25px;
+border-radius:30px;
 
 overflow:hidden;
 
@@ -222,30 +228,19 @@ color:var(--blanco);
 
 .destino-overlay h2{
 
-font-size:42px;
-
-margin:0 0 10px;
-
-font-weight:700;
-color:var(--blanco);
-
-text-shadow:
-2px 2px 8px rgba(0,0,0,.7);
-
-
+    font-size:72px;
+    font-weight:800;
+    margin-bottom:20px;
+    color:var(--blanco)
 }
 
 .destino-overlay p{
 
-font-size:18px;
-
-margin-bottom:25px;
-
+font-size:22px;
+margin-bottom:40px;
 color:#f5f5f5;
-
-max-width:350px;
-
-line-height:1.5;
+max-width:500px;
+line-height:1.8;
 
 }
 
@@ -257,11 +252,11 @@ color:var(--color-primario);
 
 border:none;
 
-padding:14px 28px;
+padding:18px 40px;
 
 border-radius:50px;
 
-font-size:16px;
+font-size:18px;
 
 font-weight:700;
 
@@ -386,21 +381,140 @@ nav a:hover {
 .card p {
   color: var(--color-primario);
 }
-.servicios {
-  padding: 100px 150px;
-  background: var(--color-fondo);
+
+/*Pagina de destinos*/
+.pagina-destinos{
+    padding:120px 8% 80px;
+    background:#f5f5f5;
 }
 
-.servicios h1 {
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 60px;
-  color: var(--color-primario);
+.pagina-destinos h1{
+    text-align:center;
+    font-size:55px;
+    color:var(--color-primario);
+    margin-bottom:60px;
 }
 
-.servicios-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+.destinos-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+.destino-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    height:500px;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.destino-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.destino-card:hover img{
+    transform:scale(1.08);
+}
+.destino-info{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:25px;
+
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+}
+.destino-info h2{
+    color:white;
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.destino-info p{
+    color:white;
+    font-size:15px;
+    line-height:1.6;
+}
+.destino-info button{
+    margin-top:20px;
+    width:max-content;
+
+    background:var(--color-secundario);
+    color:var(--color-primario);
+
+    border:none;
+    padding:12px 28px;
+    border-radius:40px;
+    cursor:pointer;
+    font-weight:bold;
+}
+.pagina-servicios{
+    padding:100px 8%;
+    background:var(--color-fondo);
+    text-align:center;
+}
+
+.pagina-servicios h1{
+    font-size:58px;
+    color:var(--color-primario);
+    margin-bottom:15px;
+}
+
+.servicios-subtitulo{
+    font-size:18px;
+    color:#666;
+    margin-bottom:70px;
+}
+.servicios-grid{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+.servicio-card{
+    width:320px;
+    background:white;
+    border-radius:22px;
+    padding:70px 30px 35px;
+    position:relative;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    transition:.35s;
+}
+
+.servicio-card:hover{
+    transform:translateY(-10px);
+}
+.servicio-info h2{
+    font-size:24px;
+    color:var(--color-primario);
+    margin-bottom:20px;
+}
+
+.servicio-info p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+.servicio-info button{
+    background:var(--color-secundario);
+    color:var(--color-primario);
+    border:none;
+    padding:14px 30px;
+    border-radius:40px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.servicio-info button:hover{
+    background:var(--color-primario);
+    color:white;
 }
