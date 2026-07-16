@@ -1,9 +1,10 @@
 import express from "express";
 import cors from "cors";
-import inicioRouter from "./src/routes/inicio.router.js";
-import usuarioRouter from "./src/routes/usuario.router.js";
-import destinoRouter from "./src/routes/destinos.router.js";
-import servicioRouter from "./src/routes/servicios.router.js";
+import inicioRouter from "./src/routes/inicio.route.js";
+import usuarioRouter from "./src/routes/usuario.route.js";
+import destinoRouter from "./src/routes/destinos.route.js";
+import servicioRouter from "./src/routes/servicios.route.js";
+import paqueteRouter from "./src/routes/paquetes.route.js"
 import db from "./src/config/db.js";
 import cargarDatos from "./src/seeders/index.js";
 
@@ -16,13 +17,14 @@ app.use("/", inicioRouter);
 app.use("/usuarios", usuarioRouter);
 app.use("/destinos", destinoRouter);
 app.use("/servicios", servicioRouter);
+app.use("/paquetes", paqueteRouter)
 
 try {
   await db.authenticate();
 
   console.log("Conexión correcta a la base de datos");
 
-  await db.sync({ alter: true });
+  await db.sync({ force: true });
 
   console.log("Tablas sincronizadas");
 
