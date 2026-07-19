@@ -1,4 +1,4 @@
-import { Paquete } from "../../models";
+import { Paquete } from "../../models/index.js";
 
 export async function getPaquetes(req, res) {
   try {
