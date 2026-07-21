@@ -11,20 +11,19 @@ const Paquete = db.define("paquetes", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  descripcion: {
-    type: DataTypes.TEXT,
-    allowNull: false,
+  incluye: {
+    type: DataTypes.JSON,
   },
   duracion: {
-    type: DataTypes.TEXT,
+    type: DataTypes.STRING,
     allowNull: false,
   },
   precio: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING,
     allowNull: false,
   },
   imagen: {
-    type: DataTypes.TEXT,
+    type: DataTypes.STRING,
     allowNull: false,
   },
 });
