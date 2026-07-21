@@ -13,6 +13,9 @@ const Servicio = db.define("servicios", {
   descripcion: {
     type: DataTypes.STRING,
   },
+  imagen: {
+    type: DataTypes.STRING,
+  },
 });
 
 export default Servicio;
