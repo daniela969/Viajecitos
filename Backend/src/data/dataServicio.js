@@ -4,7 +4,7 @@ const dataServicios = [
     descripcion:
       "Servicio de transporte para facilitar el desplazamiento entre aeropuertos, hoteles y destinos turísticos de forma cómoda y segura.",
     imagen:
-      "https://www.transvanturismo.vip/wp-content/uploads/2026/03/Transporte-empresarial-en-vans.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlKnKMJ8GwpuL2KJI0s-R9zjAqFZiH8_YNTJ3UBeyR04ZhPu7OpmSGtpPE&s=10",
   },
 
   {
