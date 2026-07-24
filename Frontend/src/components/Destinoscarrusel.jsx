@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
+import Button from "./Button";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -44,10 +44,10 @@ const destinos = [
   },
 ];
 
-function Destinoscarrusel() {
+function DestinosCarrusel() {
   return (
     <section className="destinos">
-      <h2>Destinos Destacados</h2>
+      <h2>Paquetes Destacados</h2>
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
@@ -60,7 +60,7 @@ function Destinoscarrusel() {
       >
         {destinos.map((destino) => (
           <SwiperSlide key={destino.id}>
-            <div className="destino-card">
+            <div className="destino-slide">
               <img src={destino.imagen} alt={destino.nombre} />
 
               <div className="destino-overlay">
@@ -68,7 +68,7 @@ function Destinoscarrusel() {
 
                 <p>{destino.descripcion}</p>
 
-                <button>Explorar destino</button>
+                <Button texto="Explorar destino" />
               </div>
             </div>
           </SwiperSlide>
@@ -78,4 +78,4 @@ function Destinoscarrusel() {
   );
 }
 
-export default Destinoscarrusel;
+export default DestinosCarrusel;

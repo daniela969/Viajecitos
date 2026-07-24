@@ -1,13 +1,11 @@
 import Button from "./Button";
-import HeroImage from "../assets/hero.jpg";
-import Destinoscarrusel from "./Destinoscarrusel";
+import HeroImage from "../assets/hero.png";
+import DestinosCarrusel from "./DestinosCarrusel";
 
 function Hero() {
 
 return(
-
-<div>
-
+<>
 <section className="hero">
 
 <div className="hero-text">
@@ -22,18 +20,19 @@ encuentra destinos increíbles
 y reserva fácilmente.
 </p>
 
-<Button texto="Reservar Ahora"/>
+<Button texto="Reservar Ahora" 
+className="btn-principal"
+ />
 
 </div>
 
 <div className="hero-image">
-<img src={HeroImage} alt="Viaje"
-/>
+<img src={HeroImage} alt= "Viaje" />
 </div>
 
 </section>
 
-<Destinoscarrusel/>
+<DestinosCarrusel/>
 
 <section className="testimonios">
 
@@ -65,7 +64,7 @@ Muy organizado
 
 </section>
 
-</div>
+</>
 
 )
 

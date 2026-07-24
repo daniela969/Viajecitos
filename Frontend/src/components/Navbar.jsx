@@ -1,16 +1,12 @@
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [scroll, setScroll] = useState(false);
+  const [isscroll, setIsScroll] = useState(false);
 
   useEffect(() => {
     function cambiarColor() {
-      if (window.scrollY > 80) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
+      setIsScroll(window.scrollY > 80);
     }
 
     window.addEventListener("scroll", cambiarColor);
@@ -21,16 +17,14 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={scroll ? "nav-scroll" : "nav"}>
-      <h2>Viajecitos</h2>
+    <nav className={`navbar ${isscroll ? "navbar-scroll" : ""}`}>
+      <Link to="/" className="logo">
+        <h2>Viajecitos</h2>
+      </Link>
 
       <ul>
         <li>
           <Link to="/">Inicio</Link>
-        </li>
-
-        <li>
-          <Link to="/servicios">Servicios</Link>
         </li>
 
         <li>
@@ -42,7 +36,15 @@ function Navbar() {
         </li>
 
         <li>
-          <Link to="/contactos">Contacto</Link>
+          <Link to="/servicios">Servicios</Link>
+        </li>
+
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+
+        <li>
+          <Link to="/contacto">Contacto</Link>
         </li>
       </ul>
     </nav>

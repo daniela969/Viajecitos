@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Button from "../components/Button";
 
 function Paquetes() {
   const [paquetes, setPaquetes] = useState([]);
@@ -32,26 +33,54 @@ function Paquetes() {
 
   return (
     <section className="pagina-paquetes">
-      <h1>Paquetes Turísticos</h1>
+      <div className="titulo-paquetes">
+        <h1>Nuestros paquetes</h1>
+
+        <p>
+          Descubre experiencias diseñadas para que disfrutes cada destino sin
+          preocuparte por los detalles.
+        </p>
+      </div>
 
       <div className="paquetes-grid">
         {paquetes.map((paquete) => (
-          <div className="paquete-card" key={paquete.nombre}>
-            <img
-              src={paquete.imagen}
-              alt={paquete.nombre}
-            />
+          <article className="paquete-card" key={paquete.id}>
+            <img src={paquete.imagen} alt={paquete.nombre} />
 
             <div className="paquete-info">
               <h2>{paquete.nombre}</h2>
 
-              <p>{paquete.descripcion}</p>
+              <div className="paquete-detalle">
+                <span>📅</span>
+                <p>{paquete.duracion}</p>
+              </div>
 
-              <h3>${paquete.precio}</h3>
+              <div className="paquete-incluye">
+                <h4>¿Qué incluye?</h4>
 
-              <button>Reservar</button>
+                <ul>
+                  {paquete.incluye.slice(0, 4).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+
+                {paquete.incluye.length > 4 && (
+                  <p className="paquete-beneficios">
+                    + {paquete.incluye.length - 4} beneficios más
+                  </p>
+                )}
+              </div>
+
+              <div className="paquete-precio">
+                <small>DESDE</small>
+                <h3>${paquete.precio}</h3>
+              </div>
+
+              <Button
+                texto="Reservar ahora"
+              />
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </section>

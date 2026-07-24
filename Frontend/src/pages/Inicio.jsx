@@ -4,9 +4,9 @@ import Navbar from "../components/Navbar";
 
 function Inicio() {
   return (
-    <div>
+    <>
       <Hero />
-    </div>
+    </>
   );
 }
 

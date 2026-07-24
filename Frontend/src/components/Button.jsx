@@ -1,15 +1,12 @@
-function Button(props){
+function Button({ texto, className}){
 
 return(
 
-<button>
-
-{props.texto}
-
+<button className={className}>
+{texto}
 </button>
 
 )
-
 }
 
 export default Button;
