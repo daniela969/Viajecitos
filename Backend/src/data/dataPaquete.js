@@ -13,7 +13,7 @@ const dataPaquete = [
     duracion: "7 días / 6 noches",
     precio: "1049",
     imagen:
-      "https://santiagogate.com/media/k2/items/cache/2e8bf6f45fb2b01f7bc63e367c45fa81_L.jpg?t=20240531_165955",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBXFQphmAsRBy_KORueutgWOy1zq0hVjxw0pWk-ETQKiwGiNW-vN9d6ycw&s=10",
     destinoId: "6351abd7-ff2d-4a5c-a7d3-77a55b1bdace",
   },
 
