@@ -11,6 +11,10 @@ const Paquete = db.define("paquetes", {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  descripcion: {
+    type: DataTypes.TEXT,
+    allowNull: false,
+  },
   incluye: {
     type: DataTypes.JSON,
   },

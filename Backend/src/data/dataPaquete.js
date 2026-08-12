@@ -1,7 +1,7 @@
 const dataPaquete = [
   {
     nombre: "Camino de Santiago – “Una ruta de historia y reflexión”",
-    descripción:
+    descripcion:
       "El Camino de Santiago es una de las rutas de peregrinación más importantes del mundo, con siglos de historia y tradición. Sus diferentes recorridos atraviesan paisajes naturales, pueblos medievales y ciudades llenas de patrimonio cultural hasta llegar a Santiago de Compostela, en Galicia, donde se encuentra la catedral que guarda los restos del apóstol Santiago.Más que un simple viaje, el Camino ofrece una experiencia única de conexión con la naturaleza, la cultura y uno mismo. Durante el recorrido, los visitantes pueden disfrutar de senderos, arquitectura histórica, gastronomía regional y el encuentro con peregrinos de diferentes países. Su combinación de historia, espiritualidad y aventura lo convierte en un destino turístico reconocido internacionalmente.",
     incluye: [
       "Alojamiento en hoteles y albergues para peregrinos.Recorridos por tramos destacados del Camino de Santiago",
@@ -19,7 +19,7 @@ const dataPaquete = [
 
   {
     nombre: "Carnaval de Venecia – “Magia, tradición y elegancia”",
-    descripción:
+    descripcion:
       "El Carnaval de Venecia es una de las celebraciones culturales más famosas del mundo, reconocida por sus elegantes disfraces, máscaras tradicionales y su ambiente lleno de historia. Tiene sus orígenes en la antigua República de Venecia y se caracteriza por sus desfiles, eventos artísticos y celebraciones en las calles y plazas de la ciudad. Durante el carnaval, Venecia se transforma en un escenario lleno de color, música y misterio, donde los visitantes pueden disfrutar de la arquitectura histórica, los canales y la tradición de las famosas máscaras venecianas. Esta festividad combina arte, cultura y entretenimiento, convirtiéndose en un destino turístico único que atrae a personas de todo el mundo",
     incluye: [
       "Alojamiento en hotel cercano al centro histórico",
@@ -38,7 +38,7 @@ const dataPaquete = [
 
   {
     nombre: "Bogotá Night Experience",
-    descripción:
+    descripcion:
       "Vive la capital colombiana como nunca antes con un recorrido lleno de música, gastronomía, cultura y entretenimiento. Durante tres días disfrutarás de los mejores bares, discotecas y zonas de rumba de Bogotá, sin dejar de conocer algunos de sus principales atractivos turísticos. Un paquete ideal para quienes buscan diversión, nuevas experiencias y conocer personas de diferentes partes del mundo.",
     incluye: [
       "2 noches de alojamiento en hotel de 4 estrellas",
@@ -58,7 +58,7 @@ const dataPaquete = [
   },
   {
     nombre: "Bogotá en Familia",
-    descripción:
+    descripcion:
       "Comparte una semana inolvidable descubriendo los principales atractivos de Bogotá y sus alrededores. Este paquete combina cultura, naturaleza, entretenimiento y descanso para ofrecer actividades pensadas para todas las edades, permitiendo crear recuerdos únicos junto a quienes más quieres.",
     incluye: [
       "6 noches de alojamiento en hotel de 4 estrellas",
@@ -80,7 +80,7 @@ const dataPaquete = [
   },
   {
     nombre: "Bogotá de Fe y Tradición",
-    descripción:
+    descripcion:
       "Recorre algunos de los lugares de mayor importancia espiritual e histórica de Bogotá y sus alrededores. Este paquete está diseñado para quienes desean combinar la fe con el patrimonio cultural, visitando templos emblemáticos, santuarios y monumentos religiosos en un ambiente de tranquilidad y reflexión.",
     incluye: [
       "4 noches de alojamiento en hotel de 4 estrellas.",
