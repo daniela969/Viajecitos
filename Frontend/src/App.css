@@ -322,21 +322,23 @@ nav a:hover {
 }
 .destinos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .destino-card {
   position: relative;
-  height: 540px;
+  height: 360px;
   overflow: hidden;
-  border-radius: 28px;
+  border-radius: 24px;
   background: white;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-  transition: 0.45s;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+  transition: 0.4s ease;
 }
 .destino-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
 }
 .destino-card img {
   width: 100%;
@@ -345,7 +347,7 @@ nav a:hover {
   transition: 0.8s;
 }
 .destino-card:hover img {
-  transform: scale(1.12);
+  transform: scale(1.04);
 }
 .destino-info {
   position: absolute;
@@ -353,36 +355,40 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 35px;
+  padding: 28px;
+  
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.92),
+    rgba(0, 0, 0, 0.90),
     rgba(0, 0, 0, 0.35),
-    transparent
+    transparent 75%
   );
 }
+
 .destino-info h2 {
   color: white;
-  font-size: 34px;
-  margin-bottom: 15px;
+  font-size: 28px;
+  margin: 0 0 10px;
 }
+
 .destino-info p {
-  color: #ececec;
-  line-height: 1.7;
-  font-size: 16px;
-  margin-bottom: 30px;
+  color: #f1f1f1;
+  line-height: 1.5;
+  font-size: 15px;
+  margin: 0 0 20px;
 }
+
 .destino-info button {
-  width: max-content;
+  width: fit-content;
   border: none;
   background: var(--color-secundario);
   color: var(--color-primario);
-  padding: 15px 35px;
+  padding: 12px 28px;
   border-radius: 50px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.35s;
+  transition: 0.3s;
 }
 .destino-info button:hover {
   background: var(--color-primario);
@@ -771,4 +777,52 @@ nav a:hover {
 .contacto-form button:hover {
   background: var(--color-primario);
   color: var(--color-secundario);
+}
+
+/* =========================
+   PAGINACIÓN DESTINOS
+========================= */
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.paginacion button {
+  width: 10px;
+  height: 10px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #c7cbd1;
+
+  font-size: 0;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.paginacion button:hover {
+  background: var(--color-secundario);
+
+  transform: scale(1.2);
+}
+
+.paginacion button.pagina-activa {
+  width: 28px;
+  height: 10px;
+
+  border-radius: 10px;
+
+  background: var(--color-secundario);
 }

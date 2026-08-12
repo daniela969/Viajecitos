@@ -6,6 +6,8 @@ function Destinos() {
   const [error, setError] = useState("");
   const [modalAbierto, setModalAbierto] = useState(false);
   const [destinoSeleccionado, setDestinoSeleccionado] = useState(null);
+  const [paginaActual, setPaginaActual] = useState(1);
+  const destinosPorPagina = 2;
 
   function abrirModal(destino) {
     setDestinoSeleccionado(destino);
@@ -27,9 +29,10 @@ function Destinos() {
         }
 
         const datos = await respuesta.json();
+
         setDestinos(datos);
       } catch (err) {
-         setError(err.message);
+        setError(err.message);
       } finally {
         setCargando(false);
       }
@@ -37,6 +40,14 @@ function Destinos() {
 
     obtenerDestinos();
   }, []);
+
+  const indiceUltimo = paginaActual * destinosPorPagina;
+
+  const indicePrimero = indiceUltimo - destinosPorPagina;
+
+  const destinosActuales = destinos.slice(indicePrimero, indiceUltimo);
+
+  const totalPaginas = Math.ceil(destinos.length / destinosPorPagina);
 
   if (cargando) return <h2>Cargando destinos...</h2>;
 
@@ -54,7 +65,7 @@ function Destinos() {
       </div>
 
       <div className="destinos-grid">
-        {destinos.map((destino) => (
+        {destinosActuales.map((destino) => (
           <article className="destino-card" key={destino.id}>
             <img src={destino.imagen} alt={destino.nombre} />
 
@@ -70,6 +81,18 @@ function Destinos() {
               <button onClick={() => abrirModal(destino)}>Ver más</button>
             </div>
           </article>
+        ))}
+      </div>
+
+      <div className="paginacion">
+        {Array.from({ length: totalPaginas }, (_, i) => i + 1).map((pagina) => (
+          <button
+            key={pagina}
+            onClick={() => setPaginaActual(pagina)}
+            className={pagina === paginaActual ? "pagina-activa" : ""}
+          >
+            {pagina}
+          </button>
         ))}
       </div>
 
