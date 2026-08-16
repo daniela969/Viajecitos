@@ -34,6 +34,7 @@ const dataPaquete = [
     imagen:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rzWiuD8d_7CH14udCDfbZUfnVQhUN84VmQ&s",
     destinoId: "859cef9b-b4b7-492a-890d-38ed2678b5e9",
+    destacado: true,
   },
 
   {
@@ -55,6 +56,7 @@ const dataPaquete = [
     imagen:
       "https://imagenes2.eltiempo.com/files/image_1200_535/files/fp/uploads/2023/07/28/64c3e13fe6948.r_d.1592-1360.jpeg",
     destinoId: "aa414ee8-d8f8-4533-9607-869df8d06e0d",
+    destacado: true,
   },
   {
     nombre: "Bogotá en Familia",
@@ -98,6 +100,7 @@ const dataPaquete = [
     imagen:
       "https://bogota.gov.co/sites/default/files/styles/1050px/public/field/image/catedralprimadabogota.jpg",
     destinoId: "aa414ee8-d8f8-4533-9607-869df8d06e0d",
+    destacado: true,
   },
 ];
 
