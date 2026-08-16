@@ -1,3 +1,4 @@
+import cargarBlog from "./blogSeeder.js";
 import cargarDestinos from "./destinosSeeder.js";
 import cargarPaquetes from "./paquetesSeeder.js";
 import { cargarServicios } from "./servicioSeeder.js";
@@ -11,6 +12,7 @@ async function cargarDatos() {
   await cargarPaquetes();
   await cargarServicios();
   await cargarTestimonios();
+  await cargarBlog()
 }
 
 export default cargarDatos;

@@ -6,6 +6,7 @@ import destinoRouter from "./src/routes/destinos.route.js";
 import servicioRouter from "./src/routes/servicios.route.js";
 import paqueteRouter from "./src/routes/paquetes.route.js"
 import testimoniosRouter from "./src/routes/testimonios.route.js"
+import blogRouter from "./src/routes/blog.route.js"
 import db from "./src/config/db.js";
 import cargarDatos from "./src/seeders/index.js";
 
@@ -19,6 +20,7 @@ app.use("/usuarios", usuarioRouter);
 app.use("/destinos", destinoRouter);
 app.use("/servicios", servicioRouter);
 app.use("/paquetes", paqueteRouter)
+app.use("/blog", blogRouter)
 app.use("/testimonios", testimoniosRouter)
 
 try {

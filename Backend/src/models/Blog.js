@@ -12,7 +12,11 @@ const Blog = db.define("blogs", {
     allowNull: false,
   },
   contenido: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.TEXT,
+    allowNull: false,
+  },
+  imagen: {
+    type: DataTypes.TEXT,
     allowNull: false,
   },
 });
