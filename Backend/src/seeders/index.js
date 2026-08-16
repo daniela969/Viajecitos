@@ -1,6 +1,7 @@
 import cargarDestinos from "./destinosSeeder.js";
 import cargarPaquetes from "./paquetesSeeder.js";
 import { cargarServicios } from "./servicioSeeder.js";
+import cargarTestimonios from "./testimonioSeeder.js";
 import cargarUsuarios from "./usuariosSeeder.js";
 
 async function cargarDatos() {
@@ -9,6 +10,7 @@ async function cargarDatos() {
   await cargarUsuarios();
   await cargarPaquetes();
   await cargarServicios();
+  await cargarTestimonios();
 }
 
 export default cargarDatos;

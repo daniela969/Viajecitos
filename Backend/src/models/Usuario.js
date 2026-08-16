@@ -11,10 +11,6 @@ const Usuario = db.define("usuarios", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  contrasena: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
   email: {
     type: DataTypes.STRING,
     allowNull: false,
