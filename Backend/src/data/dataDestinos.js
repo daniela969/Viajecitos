@@ -15,6 +15,7 @@ const dataDestinos = [
       "Descubre Venecia, una de las ciudades más emblemáticas y fascinantes de Italia, donde cada canal, puente y plaza cuentan una historia de siglos de esplendor. Construida sobre más de un centenar de pequeñas islas unidas por una extensa red de canales, Venecia ofrece un escenario único en el mundo que combina historia, arquitectura, cultura y un encanto inigualable. Recorre sus pintorescas calles y cruza sus históricos puentes hasta llegar a la majestuosa Plaza de San Marcos, considerada el corazón de la ciudad. Admira la imponente Basílica de San Marcos, el elegante Palacio Ducal y el famoso Campanile, monumentos que reflejan el legado de la antigua República de Venecia y su importancia como potencia comercial del Mediterráneo. Déjate llevar por la magia de un paseo en góndola a través del Gran Canal, rodeado de palacios renacentistas y edificios históricos que parecen flotar sobre el agua. Descubre rincones llenos de encanto, mercados tradicionales, galerías de arte y pequeñas plazas donde el tiempo parece haberse detenido. La gastronomía veneciana ofrece una experiencia inolvidable para todos los paladares. Disfruta de especialidades como el risotto al nero di seppia, el sarde in saor, los mariscos frescos y los tradicionales cicchetti, acompañados por excelentes vinos italianos y el auténtico café espresso. Venecia también es un destino ideal para los amantes del arte y la cultura. Sus museos, iglesias y palacios albergan obras maestras de artistas como Tiziano, Tintoretto y Veronés, mientras que eventos internacionales como el Carnaval de Venecia y la Bienal de Venecia convierten a la ciudad en un referente cultural de primer nivel. Ya sea que busques una escapada romántica, una inmersión en la historia italiana o una experiencia cultural inolvidable, Venecia te espera con su belleza incomparable y una atmósfera que ha cautivado a viajeros de todo el mundo durante siglos. Ven y descubre por qué cada rincón de esta ciudad es una auténtica obra de arte.",
     imagen:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZmUyrc4nge6YkgnHUAOuKlMSDK7efP6p7EOZCYIVg-g&s=10",
+    destacado: true,
   },
 
   {
@@ -33,6 +34,7 @@ const dataDestinos = [
       "Conocida como 'la Isla de los Dioses', Bali es un destino que logra algo poco común: combinar en un mismo lugar playas de arena dorada, selvas tropicales exuberantes, arrozales en terraza que parecen esculpidos a mano y una espiritualidad que se respira en cada rincón. Miles de templos hinduistas, como Uluwatu y Tanah Lot, se alzan sobre acantilados y aguas cristalinas, ofreciendo atardeceres que quedan grabados en la memoria de cualquier viajero. Más allá de su belleza natural, Bali es también un centro de bienestar reconocido mundialmente, con retiros de yoga, spas tradicionales y una gastronomía que mezcla sabores frescos con ingredientes locales. Ya sea que busques aventura escalando el volcán Batur al amanecer, romance en una villa privada frente al mar, o simplemente desconectarte del ritmo acelerado de la vida cotidiana, Bali tiene la capacidad de adaptarse a cualquier tipo de viajero sin perder su esencia mágica y auténtica.",
     imagen:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0JzMYAfNQEnvgQGxPWQHg2-cXVC3GKL2RHrHXkA73jg&s",
+    destacado: true,
   },
 
   {
@@ -43,7 +45,7 @@ const dataDestinos = [
     imagen:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULQxtd5BWIe3EZ3gp1zEM6NELaX4MCAp0DcMpkGcohQ&s=10",
   },
-  
+
   {
     id: "ee26a396-766d-4acc-9d9e-0ec1bae3c2fc",
     nombre: "Ciudad de México (México)",
@@ -51,6 +53,7 @@ const dataDestinos = [
       "La Ciudad de México es una de las metrópolis más fascinantes de América Latina, un lugar donde la historia prehispánica, el legado colonial español y la modernidad conviven en perfecta tensión creativa. Desde las imponentes Pirámides de Teotihuacán, construidas siglos antes de la llegada de los europeos, hasta los majestuosos palacios y catedrales del Centro Histórico, la capital mexicana ofrece un recorrido por miles de años de historia en cada esquina. Su escena cultural es igual de impresionante, con museos de talla mundial como el de Antropología o la Casa Azul de Frida Kahlo, además de una vida artística y musical que nunca se detiene. Pero si hay algo que distingue a esta ciudad, es su gastronomía: desde los puestos callejeros de tacos hasta los restaurantes de autor reconocidos internacionalmente, comer en la Ciudad de México es una experiencia sensorial en sí.",
     imagen:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLnO7_e0OHG4O0FDuhxPB4CtSozX6cs_dahcO7Dvxo6A&s=10",
+    destacado: true,
   },
 
   {
@@ -60,6 +63,7 @@ const dataDestinos = [
       "Marrakech es una ciudad que asalta los sentidos desde el primer momento: los colores intensos de las especias apiladas en los zocos, el aroma del té de menta recién servido, el sonido de los llamados a la oración mezclándose con la música callejera, y la energía imparable de la Plaza Jemaa el-Fna al caer la noche. Su Medina, declarada Patrimonio de la Humanidad, es un laberinto de callejuelas estrechas donde artesanos trabajan el cuero, el metal y los textiles tal como lo hacían sus antepasados hace siglos. Los palacios históricos, como el de la Bahía, y los jardines Majorelle ofrecen remansos de paz en medio del bullicio urbano. Pero la experiencia no termina en la ciudad: a pocas horas se extiende el imponente desierto del Sahara, donde es posible recorrer dunas doradas en camello, dormir en un campamento de lujo bajo un cielo repleto de estrellas, y sentir la inmensidad silenciosa de uno de los paisajes más impresionantes del mundo. Marrakech es, en definitiva, un destino que combina historia, cultura, gastronomía y aventura en una sola experiencia inolvidable.",
     imagen:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhIdMhwfzwyWVB07zb4Dqoj-0u5-RrrW4uvVu1gfHFw&s=10",
+    destacado: true,
   },
 
   {
@@ -78,6 +82,7 @@ const dataDestinos = [
       "Cartagena de Indias es una de las ciudades coloniales mejor conservadas de América Latina, y su Ciudad Amurallada, declarada Patrimonio de la Humanidad por la UNESCO, es un verdadero museo al aire libre. Sus calles adoquinadas están flanqueadas por casas coloridas con balcones repletos de buganvillas, mientras que plazas históricas y el imponente Castillo San Felipe de Barajas cuentan siglos de historia colonial, piratería y resistencia. Pero Cartagena no es solo historia: es también sabor caribeño, música que se escucha desde cualquier esquina, y un ambiente festivo que se intensifica al caer la noche. A poca distancia de la ciudad se encuentran las Islas del Rosario, un archipiélago de aguas turquesas y arrecifes de coral perfectos para el snorkel y el descanso en playas de ensueño. Ya sea recorriendo su casco histórico, navegando entre islas paradisíacas o simplemente disfrutando de un cóctel al atardecer frente al mar, Cartagena ofrece la combinación perfecta entre cultura, historia y el inconfundible encanto tropical del Caribe colombiano.",
     imagen:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxl51HpZKLuXy5zct0t3kyLKHCkDbA1TB313acp0f5SQ&s=10",
+    destacado: true,
   },
 
   {

@@ -30,10 +30,6 @@ const Paquete = db.define("paquetes", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  destacado: {
-    type: DataTypes.BOOLEAN,
-    defaultValue: false,
-  },
 });
 
 export default Paquete;

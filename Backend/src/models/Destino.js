@@ -19,6 +19,10 @@ const Destino = db.define("destinos", {
     type: DataTypes.TEXT,
     allowNull: false,
   },
+  destacado: {
+    type: DataTypes.BOOLEAN,
+    defaultValue: false,
+  },
 });
 
 export default Destino;
