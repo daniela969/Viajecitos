@@ -28,7 +28,7 @@ try {
 
   console.log("Conexión correcta a la base de datos");
 
-  await db.sync({ force: true });
+  await db.sync({ alter: true });
 
   console.log("Tablas sincronizadas");
 

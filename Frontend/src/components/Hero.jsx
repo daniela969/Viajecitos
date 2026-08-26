@@ -1,6 +1,7 @@
 import Button from "./Button";
 import HeroImage from "../assets/hero.png";
 import DestinosCarrusel from "./DestinosCarrusel";
+import Testimonios from "./Testimonios";
 
 function Hero() {
 
@@ -33,40 +34,11 @@ className="btn-principal"
 </section>
 
 <DestinosCarrusel/>
-
-<section className="testimonios">
-
-<h2>
-Lo que dicen nuestros viajeros
-</h2>
-
-<div className="testimonial">
-
-<h1>Maria Sanchez</h1>
-★★★★★
-
-<p>
-Excelente experiencia
-</p>
-
-</div>
-
-<div className="testimonial">
-
-<h1>Juan Perez</h1>
-
-★★★★★
-<p>
-Muy organizado
-</p>
-
-</div>
-
-</section>
+<Testimonios/>
 
 </>
 
-)
+);
 
 }
 

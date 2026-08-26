@@ -23,11 +23,9 @@ function Destinos() {
     async function obtenerDestinos() {
       try {
         const respuesta = await fetch("http://localhost:3001/destinos");
-
         if (!respuesta.ok) {
           throw new Error("No se pudieron obtener los destinos");
         }
-
         const datos = await respuesta.json();
 
         setDestinos(datos);
@@ -42,36 +40,27 @@ function Destinos() {
   }, []);
 
   const indiceUltimo = paginaActual * destinosPorPagina;
-
   const indicePrimero = indiceUltimo - destinosPorPagina;
-
   const destinosActuales = destinos.slice(indicePrimero, indiceUltimo);
-
   const totalPaginas = Math.ceil(destinos.length / destinosPorPagina);
-
   if (cargando) return <h2>Cargando destinos...</h2>;
-
   if (error) return <h2>{error}</h2>;
 
   return (
     <section className="pagina-destinos">
       <div className="titulo-destinos">
         <h1>Descubre nuestros destinos</h1>
-
         <p>
           Explora lugares únicos alrededor del mundo y vive experiencias
           inolvidables.
         </p>
       </div>
-
       <div className="destinos-grid">
         {destinosActuales.map((destino) => (
           <article className="destino-card" key={destino.id}>
             <img src={destino.imagen} alt={destino.nombre} />
-
             <div className="destino-info">
               <h2>{destino.nombre}</h2>
-
               <p>
                 {destino.descripcion.length > 140
                   ? destino.descripcion.slice(0, 140) + "..."
@@ -85,6 +74,14 @@ function Destinos() {
       </div>
 
       <div className="paginacion">
+        <button
+          className="pagina-flecha"
+          onClick={() => setPaginaActual(paginaActual - 1)}
+          disabled={paginaActual === 1}
+        >
+          &lt;
+        </button>
+
         {Array.from({ length: totalPaginas }, (_, i) => i + 1).map((pagina) => (
           <button
             key={pagina}
@@ -94,6 +91,14 @@ function Destinos() {
             {pagina}
           </button>
         ))}
+
+        <button
+          className="pagina-flecha"
+          onClick={() => setPaginaActual(paginaActual + 1)}
+          disabled={paginaActual === totalPaginas}
+        >
+          &gt;
+        </button>
       </div>
 
       {modalAbierto && (
